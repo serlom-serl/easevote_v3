@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Admin/Desktop/**)",
+      "Bash(ls:*)",
+      "Bash(wc:*)",
+      "Bash(npm install:*)",
+      "Bash(timeout 8 npx tsx:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run dev:*)",
+      "Bash(du -sh /d/thegoddysmart/goddysmartlabs/Coding/EaseVote/frontend/public/images/hero/*)",
+      "Bash(npm view:*)",
+      "Bash(cp \"d:/thegoddysmart/goddysmartlabs/Coding/EaseVote/frontend/proxy.ts\" \"d:/thegoddysmart/goddysmartlabs/Coding/EaseVote/frontend/middleware.ts\")",
+      "Bash(rm \"d:/thegoddysmart/goddysmartlabs/Coding/EaseVote/frontend/proxy.ts\")",
+      "Bash(node -e \"const c = require\\('crypto'\\); console.log\\(c.randomBytes\\(32\\).toString\\('hex'\\)\\); console.log\\(c.randomBytes\\(32\\).toString\\('hex'\\)\\);\")",
+      "Bash(rm *.eot)",
+      "Bash(rm *.woff)",
+      "Bash(rm stylesheet.css)",
+      "Bash(rm Neuwelt-Black.ttf Neuwelt-BlackItalic.ttf Neuwelt-Bold.ttf Neuwelt-BoldItalic.ttf Neuwelt-ExtraBold.ttf Neuwelt-ExtraBoldItalic.ttf Neuwelt-ExtraLight.ttf Neuwelt-ExtraLightItalic.ttf Neuwelt-Italic.ttf Neuwelt-Light.ttf Neuwelt-LightItalic.ttf Neuwelt-Medium.ttf Neuwelt-MediumItalic.ttf Neuwelt-Regular.ttf Neuwelt-Thin.ttf Neuwelt-ThinItalic.ttf NeuweltInline-Regular.ttf)",
+      "Bash(rm Neuwelt-Black.woff2 Neuwelt-BlackItalic.woff2 Neuwelt-Bold.woff2 Neuwelt-BoldItalic.woff2 Neuwelt-ExtraBold.woff2 Neuwelt-ExtraBoldItalic.woff2 Neuwelt-ExtraLight.woff2 Neuwelt-ExtraLightItalic.woff2 Neuwelt-Italic.woff2 Neuwelt-Light.woff2 Neuwelt-LightItalic.woff2 Neuwelt-Regular.woff2 Neuwelt-Thin.woff2 Neuwelt-ThinItalic.woff2 NeuweltInline-Regular.woff2)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm test:*)",
+      "Bash(pnpm approve-builds:*)",
+      "Bash(pnpm rebuild:*)",
+      "Bash(node -e \"const sharp = require\\('sharp'\\); console.log\\('sharp version:', sharp.versions.sharp\\); console.log\\('vips version:', sharp.versions.vips\\);\")",
+      "Bash(node scripts/compress-images.mjs)"
+    ]
+  }
+}
