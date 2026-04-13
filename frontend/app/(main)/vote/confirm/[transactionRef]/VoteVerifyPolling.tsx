@@ -35,16 +35,12 @@ export default function VoteVerifyPolling({
 
     const timer = setTimeout(async () => {
       try {
-        console.log(`[VerifyPolling] Attempt ${attempts + 1} for ${transactionRef}`);
         const res = await api.get(`/purchases/verify/${transactionRef}`);
-        
-        // Broaden data extraction to handle various backend response formats
+
         // Broaden data extraction to handle various backend response formats
         const rawData = res.data || res;
         const transaction = rawData.data || rawData.purchase || rawData;
         const checkStatus = (transaction.status || rawData.status || "").toUpperCase();
-
-        console.log(`[VerifyPolling] Status check: ${checkStatus}`);
 
         if (checkStatus === "SUCCESS" || checkStatus === "COMPLETED") {
           setStatus("SUCCESS");

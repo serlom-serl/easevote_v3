@@ -35,20 +35,14 @@ export default async function EventDetailPage({ params }: PageProps) {
 
     if (res) {
       const eventsList = res.data || res.events || (Array.isArray(res) ? res : []);
-      console.log(`[EventPage] Lookup for ${eventCode} returned ${eventsList.length} items`);
-      
-      event = eventsList.find((e: any) => 
+
+      event = eventsList.find((e: any) =>
         (e.eventCode || "").toUpperCase() === eventCode.toUpperCase()
       );
-
-      if (event) {
-        console.log(`[EventPage] Matched event: ${event.title} (${event.eventCode})`);
-      }
     }
   }
 
   if (!event) {
-    console.log(`[EventPage] Final result: Not Found for ${eventCode}`);
     return notFound();
   }
 

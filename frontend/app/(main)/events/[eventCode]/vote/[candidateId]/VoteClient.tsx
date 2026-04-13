@@ -44,7 +44,6 @@ export default function VoteClient({ event, candidate }: VoteClientProps) {
 
     const pollTimer = setTimeout(async () => {
       try {
-        console.log(`[VoteClient] Polling attempt ${pollingAttempts + 1} for ${activeReference}`);
         const res = await api.get(`/purchases/verify/${activeReference}`);
         const transaction = res.data || res.purchase || res;
 
@@ -99,8 +98,6 @@ export default function VoteClient({ event, candidate }: VoteClientProps) {
         customerEmail: email || undefined,
         customerPhone: phoneNumber || undefined,
       };
-
-      console.log("[VoteClient] Initializing unified vote purchase:", payload);
 
       const res = await api.post("/purchases/votes/initialize", payload);
       

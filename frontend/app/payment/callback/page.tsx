@@ -18,11 +18,9 @@ function CallbackHandler() {
 
   useEffect(() => {
     if (reference) {
-      console.log(`[PaymentCallback] Found reference: ${reference}. Redirecting to confirmation page...`);
       // We use router.replace to avoid the callback page staying in the history stack
       router.replace(`/vote/confirm/${reference}`);
     } else {
-      console.error("[PaymentCallback] No reference found in URL parameters.");
       router.replace("/");
     }
   }, [reference, router]);
