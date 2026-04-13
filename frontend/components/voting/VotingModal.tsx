@@ -23,7 +23,7 @@ export const VotingModal: React.FC<VotingModalProps> = ({
 
   if (!isOpen) return null;
 
-  const pricePerVote = event.votePrice ?? 1;
+  const pricePerVote = event.costPerVote ?? 1;
   const totalAmount = voteCount * pricePerVote;
 
   const handleVote = async () => {
